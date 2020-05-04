@@ -43,7 +43,7 @@ end
 
 group :development, :test do
   gem 'sqlite3'
-  gem 'byebug',  '11.0.1', platforms: [:mri, :mingw, :x64_mingw]
+  gem 'byebug',  , platforms: [:mri, :mingw, :x64_mingw]
 end
 
 # group :development do
