@@ -4,7 +4,7 @@ source 'http://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.0', '>= 5.0.0.1'
 # Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
 # Use Puma as the app server
 # gem 'puma', '~> 3.0'
 # Use SCSS for stylesheets
@@ -35,6 +35,15 @@ gem 'jbuilder', '~> 2.5'
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', platform: :mri
+end
+
+group :production do
+  gem 'pg', '1.1.4'
+end
+
+group :development, :test do
+  gem 'sqlite3'
+  gem 'byebug',  '11.0.1', platforms: [:mri, :mingw, :x64_mingw]
 end
 
 # group :development do
